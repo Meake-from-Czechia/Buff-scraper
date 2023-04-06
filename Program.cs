@@ -12,6 +12,7 @@ namespace vex_shit_v2
                 .Repeat(0, 10000)
                 .Select(i => randNum.Next(1, 20000))
                 .ToArray();
+
             GetSteamPrices(randLinks).GetAwaiter().GetResult();
         }
         public static async Task GetSteamPrices(int[] randLinks)
