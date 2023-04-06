@@ -38,7 +38,7 @@ namespace vex_shit_v2
                 Headless = true
             });
             var page = await browser.NewPageAsync();
-            page.DefaultTimeout = 60000;
+            page.DefaultTimeout = 30000;
             await Console.Out.WriteAsync(".");
             try
             {
